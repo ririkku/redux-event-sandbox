@@ -23,7 +23,7 @@ const User = (props) => {
   return <div>Hi, I am {props.name}, and {props.age} years old!</div>
 }
 
-// Componentにpropsが渡されない場合の初期値を`[Compoent名].defaultProps`
+// Componentにpropsが渡されない場合の初期値を`[Compoent名].defaultProps`で設定しておけるd
 User.defaultProps = {
   age: 1
 }
