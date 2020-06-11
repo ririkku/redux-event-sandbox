@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 
 const App = () => {
 
   const profiles = [
     {name: "Taro", age: 10},
     {name: "Jiro", age: 5},
-    {name: "No name"}
+    {}
   ];
 
   return (
@@ -23,9 +24,14 @@ const User = (props) => {
   return <div>Hi, I am {props.name}, and {props.age} years old!</div>
 }
 
-// Componentにpropsが渡されない場合の初期値を`[Compoent名].defaultProps`で設定しておけるd
 User.defaultProps = {
+  name: "No name",
   age: 1
+}
+
+User.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired
 }
 
 export default App;
