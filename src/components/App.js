@@ -22,6 +22,7 @@ class App extends Component {
 const mapStateToProps = state => ({ value: state.count.value });
 const mapDispatchToProps = dispatch => ({
   // key名は、render()の中のpropsとかと紐付けがあるっぽい
+  // props.methodname: () => dispatch(actionMethodNamne)
   increment: () => dispatch(increment()),
   decrement: () => dispatch(decrement())
 });
