@@ -37,7 +37,7 @@ class EventsIndex extends Component {
                     </tbody>
                 </table>
 
-                <Link to="/events/new"> </Link>
+                <Link to="/events/new">新規作成</Link>
             </>
         )
     }
